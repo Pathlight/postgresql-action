@@ -23,6 +23,10 @@ inputs:
     description: 'POSTGRES_PASSWORD - superuser password'
     required: false
     default: ''
+  postgresql repo:
+    description: 'POSTGRES_REPO - postgres docker repo'
+    required: false
+    default: 'postgres'
 runs:
   using: 'docker'
   image: 'Dockerfile'
